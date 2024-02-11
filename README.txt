@@ -1,5 +1,6 @@
-Evidencia de Repositorio en Git
+Evidencia de Repositorio en GitHub
 
+Grupo 15
 Andrés Díaz
 Álvaro Castellanos
 Diego Romero
