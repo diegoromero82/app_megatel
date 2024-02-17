@@ -1,0 +1,88 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Sección izquierda */
+.left-section {
+    background-color: #1a237e;
+    color: #ffffff;
+    padding: 80px;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 500px;
+    /* Ajuste de ancho máximo para mantener la armonía */
+    width: 100%;
+    /* Para que se adapte al contenedor */
+    margin-bottom: 20px;
+    /* Ajusta el espacio entre las secciones */
+}
+
+.logo {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* Sección derecha (formulario) */
+.right-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    /* Ajuste de ancho máximo para mantener la armonía */
+    width: 100%;
+    /* Para que se adapte al contenedor */
+    margin-left: 10px;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    /* Ajusta el espacio entre las secciones */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    /* Se ajusta el ancho para dejar espacio para el padding */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    /* Se incluye el padding y el border en el ancho total */
+}
+
+.remember-me {
+    vertical-align: middle;
+    /*display: flex;*/
+    align-items: center;
+    margin-bottom: 30px;
+    /* Se añade un espacio entre los campos y el botón */
+}
+
+.remember-me input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.login-button {
+    border-radius: 5px;
+    background-color: #1a237e;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    /* Para que ocupe todo el ancho disponible */
+}
