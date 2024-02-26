@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuarios</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <h1>Registro de Usuarios</h1>
+    <form id="registroForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br><br>
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" required><br><br>
+        <button type="submit">Registrar</button>
+    </form>
+
+    <script>
+        $(document).ready(function () {
+            $('#registroForm').submit(function (event) {
+                event.preventDefault();
+
+                var nombre = $('#nombre').val();
+                var email = $('#email').val();
+                var contraseña = $('#contraseña').val();
+
+                // Enviar solicitud POST al servidor para registrar un nuevo usuario
+                $.post('/registro', { nombre: nombre, email: email, contraseña: contraseña }, function (data) {
+                    alert(data.message);
+                    console.log('ID de usuario:', data.userId);
+                    // Redireccionar a una página de inicio de sesión u otra página de tu aplicación
+                }).fail(function (xhr, textStatus, errorThrown) {
+                    alert('Error: ' + xhr.responseText);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
