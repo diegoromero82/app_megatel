@@ -26,19 +26,23 @@
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
 
-    <div class="md:flex min-h-screen md:align-top">
+    <div class="container">
+    
         <aside class="md:w-2/5 lg:w-2/5 xl:w-1/5 bg-teal-600 px-5 py-10">
-            <h1 class="uppercase text-blue tracking-wide text-2xl  font-bold mt-2">CRM</h1>
-            <p class="mt-10 text-white">Administra tus Clientes con el CRM - IndexedDB</p>
+            <h1 class="uppercase text-blue tracking-wide text-2xl  font-bold mt-2">Megatel CRM</h1><br>
+            <img src="../../statyc/img/logo.png" alt="Logo MEGATEL">
+            <div class="logo"></div> <br><br>
+            <p class="mt-10 text-blue">Menú</p>
             <nav class="mt-8">
-                <a href="../../index.html"
-                    class="px-3 py-1 text-blue block hover:bg-teal-700 hover:text-yellow-400 ">Inicio</a> <br><br>
-                <a href="./login.html"
+                <a href="registro.html"
+                    class="px-3 py-1 text-blue block hover:bg-teal-700 hover:text-yellow-400 ">Registro</a> <br><br>
+                <a href="login.html"
                     class="px-3 py-1 text-blue block hover:bg-teal-900 mt-2 hover:text-yellow-400 bg-teal-700">Log
                     In</a> <br><br>
-                <a href="./clientes.html"
+                <a href="clientes.html"
                     class="px-3 py-1 text-blue block hover:bg-teal-900 mt-2 hover:text-yellow-400 bg-teal-700">Clientes</a>
             </nav>
+                        
         </aside> <!--sidebar-->
 
         <main class="md:w-3/5  xl:w-4/5 px-5 py-10 bg-gray-200">
@@ -58,7 +62,7 @@
                                 <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Correo</label>
                                 <input
                                     class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                    id="email" name="email" type="text" placeholder="Email Cliente" />
+                                    id="email" name="email" type="email" placeholder="Email Cliente" />
                             </div>
 
                             <div class="mb-4">
@@ -66,7 +70,7 @@
                                     for="telefono">Teléfono</label>
                                 <input
                                     class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                    id="telefono" name="telefono" type="number" placeholder="Teléfono Cliente" />
+                                    id="telefono" name="telefono" type="phone" placeholder="Teléfono Cliente" />
                             </div>
 
                             <div class="mb-4">
@@ -78,8 +82,12 @@
 
 
                             <input type="submit"
-                                class="bg-teal-600 hover:bg-teal-900 w-full mt-5 p-2 text-white uppercase font-bold"
+                                class="bg-teal-600 hover:bg-teal-900 w-full mt-5 p-2 text-blue uppercase font-bold"
                                 value="Agregar Cliente" />
+                            <input type="button"
+                                class="bg-teal-600 hover:bg-teal-900 w-full mt-5 p-2 text-blue uppercase font-bold"
+                                value="Buscar Cliente" />
+
                         </form>
                     </div>
                 </div>
