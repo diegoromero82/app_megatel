@@ -19,6 +19,11 @@ app.post('/clientes',(req, res) => {
     console.log(nombre + " " + email + " " + telefono + " " + empresa)
 })
 
+app.post('/proveedores',(req, res) => {
+    let {nit, email, telefono, empresa} = req.body
+    console.log(nit + " " + email + " " + telefono + " " + empresa)
+})
+
 app.post('/register_user', (req, res) => {
     let {email, password} = req.body
     console.log(email + " " + password)

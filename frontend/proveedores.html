@@ -16,16 +16,6 @@
 </head>
 
 <body>
-
-    <!-- JavaScript opcional -->
-    <!-- jQuery primero, luego Popper.js y finalmente Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-
     <div class="container">
     
         <aside class="md:w-2/5 lg:w-2/5 xl:w-1/5 bg-teal-600 px-5 py-10">
@@ -48,9 +38,9 @@
             <div class="flex flex-col mt-10 items-center">
                 <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 w-10/12 md:w-8/12 lg:w-6/12">
                     <div class=" shadow overflow-hidden sm:rounded-lg border-b border-gray-200 ">
-                        <form action="/register_user" method="post">
+                        <form action="/proveedores" method="post">
                             <div class="mb-4">
-                                <label class="block text-gray-700 text-sm font-bold mb-2" for="nombre">Nombre</label>
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="nombre">NIT</label>
                                 <input
                                     class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                     id="nit" name="nit" type="number" placeholder="NIT" />
@@ -80,10 +70,10 @@
 
                             <input type="submit"
                                 class="bg-teal-600 hover:bg-teal-900 w-full mt-5 p-2 text-blue uppercase font-bold"
-                                value="Agregar Cliente" />
+                                value="Guardar" />
                             <input type="button"
                                 class="bg-teal-600 hover:bg-teal-900 w-full mt-5 p-2 text-blue uppercase font-bold"
-                                value="Buscar Cliente" />
+                                value="Buscar" />
 
                         </form>
                     </div>
@@ -91,7 +81,7 @@
             </div>
         </main>
     </div>
-    <script src="js/nuevocliente.js"></script>
+    <script src="/templead/js/nuevocliente.js"></script>
 </body>
 
 </html>
