@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Metaetiquetas requeridas -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Login Megatel</title>
+    <link rel="stylesheet" href="CSS/style.css">
+   
+</head>
+
+<body>
+    <div class="container">
+
+        <aside class="md:w-2/5 lg:w-2/5 xl:w-1/5 bg-teal-600 px-5 py-10">
+            <h1 class="uppercase text-blue tracking-wide text-2xl  font-bold mt-2">Megatel CRM</h1>
+            <p class="mt-10 text-blue">Menú</p>
+            <nav class="mt-8">
+                <a href="registro.html"
+                    class="px-3 py-1 text-blue block hover:bg-teal-700 hover:text-yellow-400 ">Registro</a> <br><br>
+                <a href="login.html"
+                    class="px-3 py-1 text-blue block hover:bg-teal-900 mt-2 hover:text-yellow-400 bg-teal-700">Log
+                    In</a> <br><br>            
+            </nav>
+        </aside> <!--sidebar-->
+
+        <div class="left-section">
+            <img src="/statyc/img/logo.png" alt="Logo MEGATEL">
+            <div class="logo">
+                <h1>CRM</h1>
+            </div>
+            <p>Relacionamiento con el Cliente<br>
+                y Control comercial</p>
+        </div>
+
+        <div class="right-section">
+            <h2>Inicio de Sesión</h2>
+            <form action="/register_user" method="post">
+                <label> Email </label> <input type="text" name="email" placeholder="Email">
+                <label> Password </label> <input type="password" name="password" placeholder="Contraseña">
+                <div class="remember-me">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Recordarme</label>
+                </div>
+                <button type="submit">Iniciar</button>
+                <p><a href="#">¿Recuperar Contraseña?</a></p>
+                <p><a href="#">¿No tienes una cuenta?</a></p>
+            </form>
+            
+        </div>
+    
+    </div>
+</body>
+
+</html>

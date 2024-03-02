@@ -1,0 +1,25 @@
+{
+  "name": "app_megatel",
+  "version": "1.0.0",
+  "description": "Evidencia de Repositorio en GitHub",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegoromero82/app_megatel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diegoromero82/app_megatel/issues"
+  },
+  "homepage": "https://github.com/diegoromero82/app_megatel#readme",
+  "dependencies": {
+    "express": "^4.18.3",
+    "nodemon": "^3.1.0"
+  }
+}
