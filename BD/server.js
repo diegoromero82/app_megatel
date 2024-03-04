@@ -1,5 +1,3 @@
-// server.js
-
 const express = require('express');
 const db = require('./database.js');
 
@@ -8,9 +6,17 @@ const port = 3000;
 
 app.use(express.json());
 
+app.post("/register_user", (req, res) => {
+    console.log("verificar")
+})
+
+
 // Ruta para registrar un nuevo usuario
-app.post('/registro', (req, res) => {
+app.post('/app_megatel/public/html/registro.html', (req, res) => {
     const { nombre, email, contraseña } = req.body;
+    console.log("probando")
+    console.log(nombre + email + contraseña)
+
 
     // Insertar usuario en la base de datos
     db.run('INSERT INTO usuarios (nombre, email, contraseña) VALUES (?, ?, ?)', [nombre, email, contraseña], function (err) {
@@ -21,8 +27,8 @@ app.post('/registro', (req, res) => {
     });
 });
 
-// Sirve archivos estáticos desde el directorio actual
-app.use(express.static(__dirname));
+// Sirve archivos estáticos desde un directorio específico
+app.use(express.static('public/html'));
 
 // Iniciar el servidor
 app.listen(port, () => {
