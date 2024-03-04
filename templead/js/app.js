@@ -10,11 +10,14 @@
     function crearDB() {
         const crearDB = window.indexedDB.open('crm', 1);
 
+        //Si hay un error
         crearDB.onerror = function () {
             console.log('Hubo un error');
         };
 
+        //Si se creo bien
         crearDB.onsuccess = function () {
+            console.log('Base de datos Creada');
             DB = crearDB.result;
         };
 

@@ -1,6 +1,6 @@
 (function() {
     let DB;
-    const formulario = document.querySelector('#formulario');
+    const formulario = document.querySelector('#/clientes');
 
     document.addEventListener('DOMContentLoaded', () => {
         
