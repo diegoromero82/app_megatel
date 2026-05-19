@@ -6,11 +6,9 @@ body {
     padding: 0;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+.app-container {
+    /* Espacio de contenedor específico de la app si se necesita; no usar .container global de Bootstrap */
+    padding-top: 1rem;
 }
 
 /* Sección izquierda */
