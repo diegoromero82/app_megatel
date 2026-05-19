@@ -6,11 +6,8 @@ body {
     padding: 0;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+.app-container {
+    /* Espacio de contenedor específico de la app si se necesita */
 }
 
 /* Sección izquierda */
@@ -85,4 +82,46 @@ input[type="password"] {
     text-align: center;
     display: inline-block;
     /* Para que ocupe todo el ancho disponible */
+}
+
+/* --- Estilos añadidos para nueva interfaz de clientes --- */
+.sidebar {
+    background: linear-gradient(180deg,#0d6efd,#0b5ed7);
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.sidebar .nav-link {
+    color: rgba(255,255,255,0.9);
+    padding: 8px 0;
+}
+
+.sidebar .nav-link.active {
+    font-weight: 600;
+    color: #ffd54a;
+}
+
+.logo-img{
+    max-width: 120px;
+    height: auto;
+}
+
+.card{
+    border: none;
+    border-radius: 8px;
+}
+
+.card .card-body{
+    padding: 1.5rem;
+}
+
+/* Alert placeholder */
+#form-alert .alert {
+    margin-bottom: 0;
+}
+
+@media (max-width: 767px){
+    .sidebar{ margin-bottom: 1rem }
 }
